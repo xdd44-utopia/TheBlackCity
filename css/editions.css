@@ -1,0 +1,10 @@
+#CoverBlock {
+    width: 100%;
+    margin-bottom: -10vh;
+}
+
+#Cover {
+    display: block;
+    width: 100%;
+    overflow: hidden;
+}
