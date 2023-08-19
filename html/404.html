@@ -2,26 +2,24 @@
 <html>
 
 <head>
+    <meta charset="UTF-8">
     <link rel="stylesheet" type="text/css" href="../css/style.css?v=1">
     <link rel="stylesheet" type="text/css" media="screen and (max-device-width: 450px) and (max-device-height: 950px)" href="../css/style_mobile.css?v=1" />
-    <link rel="stylesheet" type="text/css" href="../css/404.css">
-    <link rel="stylesheet" type="text/css" media="screen and (max-device-width: 450px) and (max-device-height: 950px)" href="../css/404_mobile.css" />
     <link rel="stylesheet" type="text/css" href="../css/aos.css">
-    <link rel="shortcut icon" href="../image/icons/Website icon.png">
+    <link rel="shortcut icon" href="../image/icons/favicon.ico">
 
     <script src="../js/jquery.js"></script>
     <script src="../js/aos.js"></script>
     <script> 
         $(function(){
-            $.get("Common/meta.html", function(data){
-                $("head").append(data);
+            $("nav").load("Common/nav.html", function() {
+                document.getElementById("titleLabel").innerHTML = " :Error:";
             });
-            $("nav").load("Common/nav_page.html");
-            $("footer").load("Common/footer_page.html");
+            $("footer").load("Common/footer.html");
         });
     </script> 
 
-    <title>Page not found&nbsp;|&nbsp;xdd44's Collections</title>
+    <title>Error | the Black city</title>
 </head>
 
 <body>
@@ -29,13 +27,16 @@
     <nav>
     </nav>
 
-    <div id="Main" style="height: 50vh;">
+    <div id="Main">
         <h1>404 - Return to <a href="index.html" style="color:white; text-decoration: underline;">home</a></h1>
     </div>
 
     <footer>
     </footer>
-    
+
+    <script src="../js/index.js"></script>
+    <script src="../js/shared.js"></script>
+
 </body>
 
 </html>
